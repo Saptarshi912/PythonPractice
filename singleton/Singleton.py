@@ -1,4 +1,5 @@
 from datetime import datetime
+import time
 class SingletonMeta(type):
     _instances = {}
     def __call__(cls,*args,**kwargs):
@@ -47,8 +48,10 @@ s31 = Singelton_Service_Three("Singleton Service call Three")
 for i in range(10):
     s11.counter += 1
     if i % 2 == 0:
+        time.sleep(1)
         s21.counter += 1
     if i % 3 == 0:
+        time.sleep(2)
         s31.counter += 1
 print(s11.get_count_info())
 print(s21.get_count_info())
