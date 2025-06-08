@@ -30,8 +30,9 @@ for t in threads:
 unique_instances = set(instances)
 print(f"Number of unique instances created: {len(unique_instances)}")
 
-# OUTPUT MULTIPLE INSTANCES
-"""Instance ID: 2847695819664
+# OUTPUT MULTIPLE INSTANCES RACE CONDITIONS
+"""
+Instance ID: 2847695819664
 Instance ID: 2847695533008
 Instance ID: 2847695774608
 Instance ID: 2847695816144
