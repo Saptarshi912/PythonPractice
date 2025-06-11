@@ -1,0 +1,44 @@
+{
+  "classes": [
+    {
+      "name": "Grok",
+      "attributes": {
+        "api_key": "default_grok_key",
+        "endpoint": "https://api.grok.ai/v1/chat"
+      },
+      "methods": {
+        "chat": "return f'Grok response: {message}'"
+      }
+    },
+    {
+      "name": "ChatGPT",
+      "attributes": {
+        "api_key": "default_openai_key",
+        "endpoint": "https://api.openai.com/v1/chat/completions"
+      },
+      "methods": {
+        "chat": "return f'ChatGPT response: {message}'"
+      }
+    },
+    {
+      "name": "Perplexity",
+      "attributes": {
+        "api_key": "default_perplexity_key",
+        "endpoint": "https://api.perplexity.ai/v1/query"
+      },
+      "methods": {
+        "chat": "return f'Perplexity response: {message}'"
+      }
+    },
+    {
+      "name": "Claude",
+      "attributes": {
+        "api_key": "default_anthropic_key",
+        "endpoint": "https://api.anthropic.com/v1/messages"
+      },
+      "methods": {
+        "chat": "return f'Claude response: {message}'"
+      }
+    }
+  ]
+}
